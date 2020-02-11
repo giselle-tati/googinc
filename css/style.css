@@ -1,0 +1,789 @@
+html {
+    font: 16px/16px 'Times Roman', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#wrapper{
+    /* min-height: 200%;
+    min-width: 300px; */
+    max-width: 1900px;
+    margin: 0 auto;
+}
+ol, ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix:{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+    display: inline-block;
+}
+
+.text-right{
+    float: right;
+}
+
+.text-left{
+    float: left;
+    max-width: 200px;
+    text-align: left;
+    max-width: 50%;
+    width: 100%;
+    clear: both;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+#center {
+    max-width: 1100px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 85px;
+    height: 30px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.navigetion {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigetion li {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transform: translateX(2px);
+}
+
+.navigetion li:hover {
+    transform: translateX(3px) scale(1.1);
+    background: #e4e4e4;
+}
+
+.navigetion li a {
+    color: #3b3b3b;
+}
+
+#billbord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 572px;
+    background: url('../images/bilbord.png') no-repeat;
+    background-size: cover;
+    border-bottom: solid 4px #f34949;
+    overflow: auto;
+}
+
+#menu{
+  max-width: 100%;
+  width: 100%;
+}
+
+#sidebar, #gallery {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.text span {
+    width: 100%;
+    color: #fff;
+    font: 70px/80px 'Times Roman', sans-serif;
+    text-align: center;
+}
+.mini-text {
+    width: 100%;
+    text-align: center;
+}
+.mini-line {
+    max-width: 41px;
+    min-width: 20px;
+    height: 1px;
+    background: #fff;
+}
+.coment {
+    color: #fff;
+    min-width: 50px;
+    max-width: 350px;
+    margin: 0 25px;
+}
+.mini-line, .coment {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.images{
+    background: url('../images/menu.png');
+    width: 155px;
+    height: 75px;
+    margin: -4px auto 0;
+    text-align: center;
+    padding: 25px;
+}
+
+.images span{
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+    padding: 7px;
+}
+
+#content{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-col, .right-col {
+    display: inline-block;
+    width: 45%;
+}
+
+.column {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.column__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column p {
+    color: #b7b7b7;
+    font-size: 12px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #585151;
+    background: #d7d5d5;
+    padding: 10px;
+    margin: 0 auto 50px;
+    box-sizing: border-box;
+}
+
+.hero-btn {
+    font: 400 14px/27px "Poppins", sans-serif;
+    color: #585151;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    border-radius: 27px;
+    border: 2px solid #fff;
+    box-shadow: 5px 8.66px 20px 0px rgba(68, 84, 255, 0.078);
+    position: relative;
+    z-index: 4;
+    transition: all 400ms linear 0s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    color: #fff;
+}
+
+.name {
+    float: left;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 12px;
+    background: #222;
+    margin-left: 13px;
+}
+
+.shevron {
+    width: 10px;
+    height:10px;
+    background: url('../images/shevron.png') no-repeat;
+    float: right;
+}
+
+.images span:hover {
+    background: #fcc0c0;
+    cursor: pointer;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.paragraf {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b3b3b;
+    float: left;
+}
+
+.line {
+    display: inline-block;
+    min-width: 65px;
+    max-width: 200px;
+    height: 1px;
+    margin-left: 15px;
+    background: #777;
+    vertical-align: middle;
+}
+
+.dote {
+    float: right;
+    width: 70px;
+    text-align: right;
+}
+
+.block {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #dedede;
+    margin-right: 6px;
+}
+
+.block:nth-of-type(2){
+    background: #777;
+}
+
+.block, .box:last-of-type{
+    margin-right: 0;
+}
+
+.sb-box {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.col-images {
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+
+.col-images img {
+    width: 100%;
+    height: auto;
+    transform: scale(.9);
+}
+
+.col-images:hover img {
+  transform: scale(1);
+  outline: 1px solid #DDEA2E;
+}
+
+.box {
+    width: 20%;
+    height: auto;
+    margin-right: 6%;
+    padding: 0;
+}
+
+.col-left,
+.col-main,
+.col-center,
+.col-right {
+    width: 100%;
+    height: 200px;
+}
+
+.col-left {
+    background: url('../images/images.png') no-repeat;
+}
+
+.col-main {
+    background: url('../images/images1.png') no-repeat;
+}
+
+.col-center {
+    background: url('../images/images2.png') no-repeat;
+}
+
+.col-right {
+    background: url('../images/images3.png') no-repeat;
+}
+
+.description {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.description p {
+    float: none;
+    font-size: 14px;
+    color: #555;
+}
+.description p,
+.description span {
+    display: inline-block;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.many {
+    float: right;
+}
+
+.fa-star-o {
+    color: #ECE213;
+    transform: scale(.8);
+}
+
+.star {
+    padding-top: 5px;
+}
+
+.star .fa-star-o:hover {
+    transform: scale(1);
+    color: #8E8810;
+}
+
+.star-rating{
+    font-size: 0;
+}
+.star-rating__wrap{
+    display: inline-block;
+    font-size: 1rem;
+}
+.star-rating__wrap:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.star-rating__ico{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #FFB300;
+}
+.star-rating__ico:last-child{
+    padding-left: 0;
+}
+.star-rating__input{
+    display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+    content: "\f005";
+}
+
+.fones img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #3b3b3b;
+    padding: 100px 0;
+    color: #fff;
+    overflow: auto;
+}
+
+.ny_address,
+.address,
+.links,
+.copyright {
+    width: 18.181818%;
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.links ul li a:hover {
+    color: #d7d5d5;
+}
+
+.copyright a:hover {
+    color: #d7d5d5;
+    text-decoration: underline;
+}
+
+.ny_address,
+.address,
+.links{
+    margin-right: 5.454545%;
+}
+
+.logo-resto {
+    background: url('../images/Resto.png') no-repeat;
+    width: 81px;
+    height: 30px;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px){
+    #wrapper {
+        width: 100%;
+    }
+
+    #center{
+        margin: 0 auto;
+    }
+
+    .navigetion{
+        justify-content: space-around;
+    }
+
+    #billbord{
+        text-align: center;
+        overflow: auto;
+    }
+
+    .mini-text{
+        width: 100%;
+    }
+
+    .coment{
+        color: #fff;
+        min-width: 50px;
+        max-width: 350px;
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .sb-box {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 50%;
+        margin: 15px auto;
+        height: auto;
+    }
+
+    .box:last-of-type {
+        margin: 0 auto;
+    }
+
+    .col-images {
+        width: 100%;
+    }
+
+    .col-images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #wrapper {
+        width: 100%;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    #center {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #header {
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    #billbord {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+        display: block;
+        max-width: 100px;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .navigetion {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .navigetion li {
+        padding: 5px 0px;
+    }
+
+    .navigetion li a {
+        padding: 0 5px;
+        transform: translateX(1px) scale(1.1);
+    }
+
+    .text{
+        margin: 15px 0;
+    }
+
+    .mini-text{
+        width: 100%;
+    }
+
+    .coment{
+        color: #fff;
+        max-width: 350px;
+        margin: 0;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+
+    .sb-box{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .box {
+        float: left;
+        width: 32%;
+        margin-bottom: 5%;
+    }
+
+    .box:nth-child(2n){
+        float: right;
+    }
+
+    #gallery{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .featured {
+        margin-bottom: 30px;
+    }
+
+    .fones{
+        width: 100%;
+    }
+
+    #footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 15px;
+        color: #fff;
+    }
+
+    .copyright,
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-col, .right-col {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: auto;
+    }
+
+    .ny_address,
+    .address,
+    .links,
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        margin-right: 0;
+    }
+    .ny_address,
+    .address {
+        margin-bottom: 20px;
+    }
+    .logo-resto {
+        background: url('../images/Resto.png') no-repeat;
+        width: 81px;
+        height: 30px;
+        clear: both;
+        margin-top: 20px;
+    }
+
+    #billbord,
+    #featured,
+    #gallery,
+    #footer,
+    .fones {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #billbord {
+        height: 450px;
+    }
+    .text span {
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .featured .line {
+        display: none;
+    }
+
+    .mini-text{
+        font-size: 14px;
+    }
+    .coment {
+        margin: 0;
+    }
+    .left-col{
+        width:100%;
+        float: none;
+    }
+
+    .column{
+        width: 100%;
+    }
+
+    .name{
+      float: left;
+    }
+
+    .vertical-line{
+        width: 4px;
+        height: 12px;
+        background: #222;
+        margin-left: 13px;
+    }
+    .shevron{
+        float: right;
+        width: 10px;
+        height:7px;
+        background: url('../images/shevron.png') no-repeat;
+        margin-top: 5px;
+    }
+    .sb-box{
+        width: 100%;
+    }
+    .box{
+        float: none;
+        width: 75%;
+        margin: 0 auto 25px;
+    }
+    .box:last-of-type{
+        margin:auto;
+    }
+
+    .fones{
+        width: 100%;
+        height: auto;
+    }
+
+    .ny_address,
+    .address,
+    .links,
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .links{
+      clear: both;
+    }
+
+    #footer .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #footer .links li {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+}
