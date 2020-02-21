@@ -1,4 +1,4 @@
-<! Doctype html>
+<!Doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -18,12 +18,12 @@
               <div class="logo">
                   <img src="images/logo.png"/>
               </div>
-              <ul class="navigetion">
-                      <li><a href="#">Our Story</a></li>
-                      <li><a href="#">Menu</a></li>
-                      <li><a href="#">Reservations</a></li>
-                      <li><a href="#">News</a></li>
-                      <li><a href="#">Rviews</a></li>
+              <ul class="navigation">
+                      <li class="navigation__item active"><a href="/">Our Story</a></li>
+                      <li class="navigation__item"><a href="#">Menu</a></li>
+                      <li class="navigation__item" data-open-popup><a href="#">Reservations</a></li>
+                      <li class="navigation__item"><a href="#sidebar">News</a></li>
+                      <li class="navigation__item"><a href="#gallery">Rviews</a></li>
               </ul>
           </div>
       </div>
@@ -288,7 +288,15 @@
         </div>
 <!--оформляем футер-->
 
+
+
+	<div id="back-top">
+		<a href="#top"><span></span></a>
+	</div>
+
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
     </body>
 </html>
